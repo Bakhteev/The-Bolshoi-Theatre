@@ -105,7 +105,7 @@ button {
 
 .header__menu li:last-child {
   position: relative;
-  margin-left: 104px;
+  margin-left: 70px;
   margin-right: 0;
 }
 
@@ -215,7 +215,7 @@ button {
 }
 
 .hero {
-  background: url(../../img/hero/herobg.jpg) no-repeat, center;
+  background: url(../../img/hero/herobg.webp) no-repeat, center;
   background-size: cover;
   height: 100vh;
 }
