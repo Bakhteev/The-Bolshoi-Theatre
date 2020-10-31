@@ -215,7 +215,7 @@ button {
 }
 
 .hero {
-  background: url(../../img/hero/herobg.webp) no-repeat, center;
+  background: url(../../img/hero/herobg.webp) no-repeat center;
   background-size: cover;
   height: 100vh;
 }
