@@ -1,16 +1,14 @@
 .header {
-    background-color: #000000;
-
-		&__nav {
-		}
+      width: 100%;
+      margin-top: 50px;
+      position: absolute;
+      z-index: 2;
 		&__menu {
             @include flexbox(center, space-between);
             list-style: none;
 		}
 		&__link {
-            @include font(18px, 25px);
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
+            @include font(18px, 25px, 0.1em);
 		}
 }
 

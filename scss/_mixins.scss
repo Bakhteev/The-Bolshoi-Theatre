@@ -8,9 +8,11 @@
     left: 50%;
     transform: translate(-50%);
 }
-@mixin font($size, $line-height, $weight: bold, $style: normal) {
+@mixin font($size, $line-height, $letter-spacing, $text-transform: uppercase, $weight: bold, $style: normal) {
 	font-size: $size;
     line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    text-transform: $text-transform;
     font-weight: $weight;
     font-style: $style;
 }
