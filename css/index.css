@@ -20,7 +20,6 @@ h1, h2, h3, h4, h5, h6, p {
 button {
   outline: none;
   border: none;
-  cursor: pointer;
 }
 
 .container {
@@ -43,11 +42,10 @@ button {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 150%;
-  letter-spacing: auto;
+  letter-spacing: normal;
   text-transform: none;
   font-weight: normal;
   font-style: normal;
-  line-height: 150%;
 }
 
 .goldSpan {
@@ -66,6 +64,12 @@ button {
   font-style: normal;
   text-align: center;
   color: #FFFFFF;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.btn:hover {
+  background-color: #af8937;
 }
 
 .col-6 {
@@ -86,10 +90,33 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__menu li {
+  margin-right: 63px;
+  white-space: nowrap;
+}
+
+.header__menu li:last-child {
+  position: relative;
+  margin-left: 104px;
+  margin-right: 0;
+}
+
+.header__menu li:last-child::before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #D1A954;
 }
 
 .header__link {
@@ -99,6 +126,12 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   font-style: normal;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.header__link:hover {
+  color: #c4c4c4;
 }
 
 .sidebar {
@@ -182,7 +215,7 @@ button {
 }
 
 .hero {
-  background: url(../../img/hero/herobg.jpg) no-repeat center;
+  background: url(../../img/hero/herobg.jpg) no-repeat, center;
   background-size: cover;
   height: 100vh;
 }

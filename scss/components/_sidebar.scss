@@ -11,7 +11,7 @@
 			margin-top: 160px;
 			margin-bottom: 86px;
 			height: 174px;
-			@include flexbox(center, space-between)
+			@include flexbox(center, space-between);
 			flex-direction: column;
 		}
 		&__icon{

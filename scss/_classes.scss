@@ -3,15 +3,13 @@
     margin: 0 auto;
 }
 .title{
-    @include font( 48px, 65px, 300 );
+    @include font( 48px, 65px, 300);
     text-transform: uppercase;
     letter-spacing: 0.1em;
-
 }
 .description{
     font-family: "Open Sans", sans-serif;
-    @include font(14px, 150%, auto, none, normal);
-    line-height: 150%;
+    @include font(14px, 150%, normal, none, normal);
 }
 .goldSpan{
     color: $gold;
@@ -23,6 +21,10 @@
     @include font(18px, 25px, 01em);
     text-align: center;
     color: #FFFFFF;
+    transition: 0.3s linear;
+    &:hover{
+        background-color: #af8937;
+    }
 }
 .col-6{
     width: 50%;
