@@ -1,0 +1,16 @@
+.header {
+    background-color: #000000;
+
+		&__nav {
+		}
+		&__menu {
+            @include flexbox(center, space-between);
+            list-style: none;
+		}
+		&__link {
+            @include font(18px, 25px);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+		}
+}
+
