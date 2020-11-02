@@ -3,9 +3,11 @@
     margin: 0 auto;
 }
 .title{
-    @include font( 48px, 65px, 300);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    @include font( 48px, 65px, 0.1em, uppercase, 300);
+    text-align: center;
+    &:first-letter{
+        color: $gold;
+    }
 }
 .description{
     font-family: "Open Sans", sans-serif;
@@ -35,4 +37,13 @@
 }
 .col-6{
     width: 50%;
+}
+.col-5{
+    width: 41.67%;
+}
+.col-4{
+    width: 25%;
+}
+.col-3{
+    width: 33.33%;
 }
