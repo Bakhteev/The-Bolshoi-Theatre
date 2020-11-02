@@ -38,7 +38,7 @@ button {
   text-align: center;
 }
 
-.title:first-letter {
+.title span {
   color: #D1A954;
 }
 
@@ -313,16 +313,12 @@ button {
   margin-bottom: 100px;
 }
 
-.about__item {
-  margin-right: 30px;
-}
-
 .about__item--255 {
   max-width: 255px;
 }
 
-.about__item:last-child {
-  margin-right: -30px;
+.about__item:first-child {
+  margin-right: 30px;
 }
 
 .about__item__subtitle {
@@ -343,7 +339,7 @@ button {
 }
 
 .about__item__info {
-  margin: 15px 0 28px 0;
+  margin: 13px 0;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.05em;
@@ -353,5 +349,96 @@ button {
 }
 
 .about__item__info:last-child {
-  margin: 18px  0 0 0;
+  margin: 10px 0 0 0;
+}
+
+.project {
+  margin-bottom: 140px;
+}
+
+.project__title {
+  margin-bottom: 100px;
+}
+
+.project__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.project__item {
+  position: relative;
+}
+
+.project__item:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  opacity: 0.65;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  height: 100%;
+  width: 100%;
+}
+
+.project__item__nomination {
+  position: absolute;
+  margin: 40px 0 0 40px;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.project__item__date {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  bottom: 80px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.project__item__search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #D1A954;
+  border: 35px solid #D1A954;
+  border-radius: 47%;
+  -webkit-box-shadow: 0 3px 15px black;
+          box-shadow: 0 3px 15px black;
+  opacity: 0;
+}
+
+.black {
+  position: absolute;
+  background-color: #333333;
+  opacity: 0.65;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.black:hover {
+  opacity: 0;
 }

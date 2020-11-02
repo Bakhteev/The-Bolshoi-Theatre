@@ -5,7 +5,7 @@
 .title{
     @include font( 48px, 65px, 0.1em, uppercase, 300);
     text-align: center;
-    &:first-letter{
+    span{
         color: $gold;
     }
 }
