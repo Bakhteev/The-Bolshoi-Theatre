@@ -1,17 +1,19 @@
 .hero {
-    background: url(../../img/hero/herobg.webp) no-repeat center;
+    background: url(../img/hero/herobg.webp) no-repeat center;
     background-size: cover;
     height: 100vh;
 		&__title {
-            margin-top: 384px;
             @include font(64px, 87px, 0.1em);
 		}
 		&__description {
             margin: 50px 0;
         }
-        &__col{
-            @include flexbox(flex-start, center);
+        &__item{
+            @include flexbox(end, center);
             flex-direction: column;
+        }
+        &__item--jc{
+            @include flexbox(flex-end, center)
         }
         &__btn{
             @include flexbox;

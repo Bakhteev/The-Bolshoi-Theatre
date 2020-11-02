@@ -26,6 +26,13 @@
         background-color: #af8937;
     }
 }
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+.h100{
+    height: 100%;
+}
 .col-6{
     width: 50%;
 }
