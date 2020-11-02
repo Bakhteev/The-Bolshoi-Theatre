@@ -64,12 +64,20 @@ button {
   font-style: normal;
   text-align: center;
   color: #FFFFFF;
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
 .btn:hover {
   background-color: #af8937;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.h100 {
+  height: 100%;
 }
 
 .col-6 {
@@ -84,15 +92,9 @@ button {
 }
 
 .header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -126,7 +128,6 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   font-style: normal;
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
@@ -141,44 +142,25 @@ button {
   width: 150px;
   top: 0;
   background-color: rgba(51, 51, 51, 0.7);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .sidebar__social {
   margin-top: 160px;
   margin-bottom: 86px;
   height: 174px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .sidebar__icon {
   padding: 10px;
   fill: #c4c4c4;
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
@@ -195,8 +177,7 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   font-style: normal;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   white-space: nowrap;
   color: #c4c4c4;
   text-align: right;
@@ -205,8 +186,7 @@ button {
 .sidebar__information::before {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: -120px;
   width: 80px;
   height: 1px;
@@ -215,13 +195,12 @@ button {
 }
 
 .hero {
-  background: url(../../img/hero/herobg.webp) no-repeat center;
+  background: url(../img/hero/herobg.webp) no-repeat center;
   background-size: cover;
   height: 100vh;
 }
 
 .hero__title {
-  margin-top: 384px;
   font-size: 64px;
   line-height: 87px;
   letter-spacing: 0.1em;
@@ -234,32 +213,23 @@ button {
   margin: 50px 0;
 }
 
-.hero__col {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.hero__item {
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero__item--jc {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .hero__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.1em;
@@ -267,3 +237,4 @@ button {
   font-weight: bold;
   font-style: normal;
 }
+/*# sourceMappingURL=index.css.map */
