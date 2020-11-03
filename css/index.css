@@ -52,7 +52,7 @@ button {
   font-style: normal;
 }
 
-.goldSpan {
+.gold-span {
   color: #D1A954;
 }
 
@@ -440,8 +440,8 @@ button {
   background-color: #D1A954;
   border: 35px solid #D1A954;
   border-radius: 47%;
-  -webkit-box-shadow: 0 3px 15px black;
-          box-shadow: 0 3px 15px black;
+  -webkit-box-shadow: 0 2px 20px black;
+          box-shadow: 0 2px 20px black;
   opacity: 0;
   -webkit-transition: 0.3s linear;
   -o-transition: 0.3s linear;
@@ -472,4 +472,140 @@ button {
 
 .project__item:hover::before {
   opacity: 0;
+}
+
+.rating {
+  margin-bottom: 150px;
+}
+
+.rating__row {
+  position: relative;
+  z-index: 1;
+  background: url(../../img/rating/Rectangle28.png) no-repeat center;
+  background-size: cover;
+  height: 100%;
+  padding: 126px 90px 126px 185px;
+}
+
+.rating__row::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: rgba(51, 51, 51, 0.9);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.rating__years {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rating__year {
+  font-size: 72px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.rating__text {
+  margin: 50px 0 0 100px;
+  max-width: 540px;
+}
+
+.rating__stars {
+  margin-bottom: 25px;
+  height: 33px;
+}
+
+.rating__star:not(:last-child) {
+  margin-right: 25px;
+}
+
+.rating__star:nth-child(1) {
+  -webkit-animation: star-up 0.6s linear 0.1s  alternate infinite;
+          animation: star-up 0.6s linear 0.1s  alternate infinite;
+}
+
+.rating__star:nth-child(2) {
+  -webkit-animation: star-up 0.6s linear 0.2s  alternate infinite;
+          animation: star-up 0.6s linear 0.2s  alternate infinite;
+}
+
+.rating__star:nth-child(3) {
+  -webkit-animation: star-up 0.6s linear 0.3s  alternate infinite;
+          animation: star-up 0.6s linear 0.3s  alternate infinite;
+}
+
+.rating__star:nth-child(4) {
+  -webkit-animation: star-up 0.6s linear 0.4s  alternate infinite;
+          animation: star-up 0.6s linear 0.4s  alternate infinite;
+}
+
+.rating__star:nth-child(5) {
+  -webkit-animation: star-up 0.6s linear 0.5s   alternate infinite;
+          animation: star-up 0.6s linear 0.5s   alternate infinite;
+}
+
+.rating__rewiev {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@-webkit-keyframes star-up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+@keyframes star-up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+.partners__title {
+  margin-bottom: 100px;
+}
+
+.partners__row {
+  margin: 0 -40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners__logo {
+  max-width: 200px;
+  margin: 0 40px 80px 40px;
 }
