@@ -11,9 +11,10 @@
         &__item{
             @include flexbox(end, center);
             flex-direction: column;
-        }
-        &__item--jc{
-            @include flexbox(flex-end, center)
+            margin-right: 150px;
+            &:last-child{
+                margin-right: -150px;
+            }
         }
         &__btn{
             @include flexbox;

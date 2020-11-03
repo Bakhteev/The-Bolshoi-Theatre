@@ -3,10 +3,16 @@
     align-items: $align-items;
     justify-content: $justify-content;
 }
-@mixin absoluteCenter {
+@mixin absoluteCenterX {
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
+}
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 @mixin font($size, $line-height, $letter-spacing, $text-transform: uppercase, $weight: bold, $style: normal) {
 	font-size: $size;
