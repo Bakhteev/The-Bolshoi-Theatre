@@ -33,3 +33,4 @@ Items.forEach((items, i) => items.addEventListener('mouseleave', () => {
     searchs[i].classList.remove('opacity');
 }))
 
+

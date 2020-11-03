@@ -1,0 +1,13 @@
+.partners {
+		&__title {
+            margin-bottom: 100px;
+		}
+		&__row {
+            margin: 0 -40px;
+            justify-content: space-between;
+		}
+		&__logo {
+            max-width: 200px;
+            margin: 0 40px 80px 40px;
+		}
+}
