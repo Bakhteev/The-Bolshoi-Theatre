@@ -373,7 +373,7 @@ button {
   position: relative;
 }
 
-.project__item:hover::before {
+.project__item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -440,5 +440,9 @@ button {
 }
 
 .black:hover {
+  opacity: 0;
+}
+
+.project__item:hover::before {
   opacity: 0;
 }
