@@ -16,7 +16,7 @@
                 left: 0;
                 background-color: $black;
                 opacity: 0.65;
-                transition: 0.3s;
+                transition: 0.3s linear;
                 height: 100%;
                 width: 100%;
             }
@@ -42,7 +42,6 @@
         }
 	
 }
-
 .black{
     position: absolute;
     background-color: $black;
