@@ -24,12 +24,14 @@
                 position: absolute;
                 margin: 40px 0 0 40px;
                 @include font(24px, 33px, 0.05em);
+                transition: 0.3s linear;
             }
             &__date{
                 position: absolute;
                 transform: rotate(-90deg);
                 bottom: 80px;
                 @include font(18px, 25px, 0.1em);
+                transition: 0.3s linear;
             }
             &__search{
                 @include absoluteCenter;
@@ -38,6 +40,12 @@
                 border-radius: 47%;
                 box-shadow:0 3px 15px rgb(0, 0, 0);
                 opacity: 0;
+                transition: 0.3s linear;
+                &:hover{
+                    fill: rgba($color: $black, $alpha: 0.3);
+                    background-color:#af8937;
+                    border-color:  #af8937;
+                }
             }
         }
 	
