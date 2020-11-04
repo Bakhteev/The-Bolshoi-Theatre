@@ -1,7 +1,5 @@
 .footer {
-
-		// .footer__title
-
+    margin-bottom: 150px;
 		&__title {
             margin-bottom: 100px;
 		}
@@ -9,8 +7,6 @@
             max-width: 730px;
             justify-content: space-between;
         }
-		// .footer__row--top
-
 		&__row {
             justify-content: space-between;
 		}
@@ -25,26 +21,23 @@
                     margin-bottom: 0;
                 }
             }
-
 		}
 		&__link {
             @include font(16px, 22px, 0.05em);
 		}
-
-		// .footer__label
         &__labels{
             justify-content: space-between;
             width: 100%;
-            max-height: 100px;
+            max-height: 100%;
             margin-bottom: 40px;
             &__inner{
+                max-height: 100px;
                 max-width: 390px;
                 justify-content: space-between;
 
             }
         }
 		&__label {
-            // margin-right: 30px;
             margin-bottom: 30px;
             &:last-child{
                 max-width: 310px;
@@ -60,11 +53,13 @@
             border: none;
         }
         &__textarea{
+            margin-bottom: 30px;
             border: none;
             outline: none;
             padding: 0;
             width: 310px;
-            max-height: 100px ;
+            height: 100px;
+            resize: none;
         }
         &__row--bottom{
             justify-content: space-between;

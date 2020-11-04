@@ -605,6 +605,10 @@ button {
   margin: 0 40px 80px 40px;
 }
 
+.footer {
+  margin-bottom: 150px;
+}
+
 .footer__title {
   margin-bottom: 100px;
 }
@@ -650,11 +654,12 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  max-height: 100px;
+  max-height: 100%;
   margin-bottom: 40px;
 }
 
 .footer__labels__inner {
+  max-height: 100px;
   max-width: 390px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -678,11 +683,13 @@ button {
 }
 
 .footer__textarea {
+  margin-bottom: 30px;
   border: none;
   outline: none;
   padding: 0;
   width: 310px;
-  max-height: 100px;
+  height: 100px;
+  resize: none;
 }
 
 .footer__row--bottom {
