@@ -18,7 +18,6 @@
         }
         &__btn{
             @include flexbox;
-            @include font(18px, 25px, 0.1em, uppercase);
         }
         
 }
