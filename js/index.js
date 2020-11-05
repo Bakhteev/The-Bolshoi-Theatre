@@ -33,4 +33,23 @@ Items.forEach((items, i) => items.addEventListener('mouseleave', () => {
     searchs[i].classList.remove('opacity');
 }))
 
+//===========================================================
+
+
+document.addEventListener("DOMContentLoaded", function (resize) {
+    let heroRowH100 = document.getElementById('h100');
+    function resize() {
+        if (window.innerWidth <= 1166) {
+            heroRowH100.classList.remove('h100');
+        } else {
+            heroRowH100.classList.add('h100');
+        }
+    }
+    window.onresize = resize;
+});
+
+
+
+
+
 

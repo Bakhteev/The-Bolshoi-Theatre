@@ -31,35 +31,44 @@
             max-height: 100%;
             margin-bottom: 40px;
             &__inner{
-                max-height: 100px;
                 max-width: 390px;
                 justify-content: space-between;
 
             }
         }
-		&__label {
-            margin-bottom: 30px;
-            &:last-child{
-                max-width: 310px;
-            }
-		}
 
 
 		&__input {
-            padding: 0;
+            box-sizing: border-box;
+            background-color: #444444;
+            padding: 13px 0 13px 15px;
+            margin-bottom: 30px;
             max-width: 180px;
             max-height: 35px; 
             outline: none;
-            border: none;
+            border: 1px solid #666666;
+            color: #989898;
+            &::placeholder{
+                font-family: "Open Sans", sans-serif;
+                @include font(12px, 150%, normal, none, 600);
+                color: #989898;
+            }
         }
         &__textarea{
-            margin-bottom: 30px;
-            border: none;
+            box-sizing: border-box;
+            background-color: #444444;
+            border: 1px solid #666666;      
             outline: none;
-            padding: 0;
+            padding: 13px 0 0 15px;
             width: 310px;
             height: 100px;
             resize: none;
+            color: #989898;
+            &::placeholder{
+                font-family: "Open Sans", sans-serif;
+                @include font(12px, 150%, normal, none, 600);
+                color: #989898;
+            }
         }
         &__row--bottom{
             justify-content: space-between;
