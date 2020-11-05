@@ -2,12 +2,25 @@
 		&__title {
             margin-bottom: 100px;
 		}
+		.row{
+			@media screen and (max-width:992px) {
+				width: 1034px;
+				max-height: 272px;
+			}
+		}
 		&__row {
             margin: 0 -40px;
-            justify-content: space-between;
+			justify-content: space-between;
+			@media screen and (max-width:992px) {
+				width: 690px;
+				overflow: hidden;
+				margin-left: 0 auto 0 64px;
+				justify-content: center;
+			}
 		}
 		&__logo {
             max-width: 200px;
-            margin: 0 40px 80px 40px;
+			margin: 0 40px 80px 40px;
+			
 		}
 }

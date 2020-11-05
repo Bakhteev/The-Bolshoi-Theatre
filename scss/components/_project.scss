@@ -6,6 +6,11 @@
 		&__slider {
             display: flex;
             justify-content: flex-end;
+            @media screen and (max-width:992px) {
+                justify-content: flex-start;
+                max-width: 690px;
+                overflow: hidden;
+            }
 		}
 		&__item {
             position: relative;

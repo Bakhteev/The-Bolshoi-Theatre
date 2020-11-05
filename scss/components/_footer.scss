@@ -1,4 +1,5 @@
 .footer {
+    margin-top: 100px;
     margin-bottom: 150px;
 		&__title {
             margin-bottom: 100px;
@@ -9,21 +10,43 @@
         }
 		&__row {
             justify-content: space-between;
+            @media screen and (max-width:992px) {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
 		}
 
 		&__contacts {
             padding: 0;
             margin: 0;
             list-style: none;
+            @media screen and (max-width:992px) {
+                width: 692px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
             li{
-                margin-bottom: 25px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                // margin-bottom: 25px;
                 &:last-child{
                     margin-bottom: 0;
+                }
+                @media screen and (max-width:992px) {
+
                 }
             }
 		}
 		&__link {
             @include font(16px, 22px, 0.05em);
+            margin-bottom: 25px;
+            @media screen and (max-width:992px) {
+                &:first-child{
+                text-align: right;
+            }
+            }
 		}
         &__labels{
             justify-content: space-between;
@@ -82,5 +105,24 @@
         }
         &__btn{
             width: 190px;
+        }
+        &__bottom{
+            margin-top: 80px;
+            width: 100%;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: -30px;
+                height: 2px;
+                width: 100%;
+                background-color: #565656;
+            }
+            &__text{
+               color: #989898; 
+            }
+            &__row{
+                justify-content: space-between;
+            }
         }
 }

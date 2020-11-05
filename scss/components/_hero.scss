@@ -8,12 +8,20 @@
         &__row{
             justify-content: center;
             align-items: center;
+            height: 100%;
+            @media screen and (max-width:992px) {
+                height: auto;
+            }
         }
 		&__title {
             @include font(64px, 87px, 0.1em);
+            white-space: nowrap;
 		}
 		&__description {
             margin: 50px 0;
+            @media screen and (max-width:992px) {
+                width: 539px;
+            }
         }
         &__item{
             @include flexbox(end, center);

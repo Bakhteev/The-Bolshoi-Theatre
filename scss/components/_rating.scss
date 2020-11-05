@@ -31,6 +31,11 @@
 		&__text {
             margin: 50px 0 0 100px;
             max-width: 540px;
+            @media screen and (max-width:992px) {
+                max-width: 450px;
+                max-height: 190px;
+                margin-left: 82px;
+            }
         }
         &__stars{
             margin-bottom: 25px;
@@ -44,21 +49,22 @@
                 animation: star-up 0.6s linear 0.1s  alternate infinite;
             }
             &:nth-child(2){
-                animation: star-up 0.6s linear 0.2s  alternate infinite ;
+                animation: star-up 0.6s linear 0.2s  alternate infinite;
             }
             &:nth-child(3){
-                animation: star-up 0.6s linear 0.3s  alternate infinite ;
+                animation: star-up 0.6s linear 0.3s  alternate infinite;
             }
             &:nth-child(4){
-                animation: star-up 0.6s linear 0.4s  alternate infinite ;
+                animation: star-up 0.6s linear 0.4s  alternate infinite;
             }
             &:nth-child(5){
-                animation: star-up 0.6s linear 0.5s   alternate infinite ;
+                animation: star-up 0.6s linear 0.5s   alternate infinite;
             }
         }
 		&__rewiev {
             font-family: "Open Sans", sans-serif;
             @include font(36px, 150%, normal, none);
+            @include adaptiv-font(36, 25)
 		}
 }
 @keyframes star-up{

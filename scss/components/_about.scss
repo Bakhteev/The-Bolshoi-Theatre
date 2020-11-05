@@ -1,14 +1,26 @@
 .about {
     margin: 150px 0;
+    &__row{
+        justify-content: center;
+    }
 	    &__title {
             margin-bottom: 100px;
         }
         &__item{
+            width: 445px;
             &--255{
                 max-width: 255px;
+                @media screen and (max-width:992px) {
+                    max-width: 208px;     
+                }
             }
             &:first-child{
                 margin-right: 30px;
+            }
+            @media screen and (max-width:992px) {
+                &:last-child{
+                    display: none;
+                }
             }
 	    &__subtitle {
             margin-bottom: 40px;
