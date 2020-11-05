@@ -376,6 +376,12 @@ button {
   margin: 150px 0;
 }
 
+.about__row {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .about__title {
   margin-bottom: 100px;
 }
@@ -386,6 +392,12 @@ button {
 
 .about__item:first-child {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .about__item:last-child {
+    display: none;
+  }
 }
 
 .about__item__subtitle {

@@ -33,11 +33,11 @@ Items.forEach((items, i) => items.addEventListener('mouseleave', () => {
     searchs[i].classList.remove('opacity');
 }))
 
-//===========================================================
-
+//=============================================================================================================================
+let heroRowH100 = document.getElementById('h100');
+let w = window.innerWidth
 
 document.addEventListener("DOMContentLoaded", function (resize) {
-    let heroRowH100 = document.getElementById('h100');
     function resize() {
         if (window.innerWidth <= 1166) {
             heroRowH100.classList.remove('h100');
@@ -47,6 +47,18 @@ document.addEventListener("DOMContentLoaded", function (resize) {
     }
     window.onresize = resize;
 });
+
+let adaptiveH100 = () =>{
+    if ( w <= 1166) {
+        heroRowH100.classList.remove('h100'); 
+    }
+    else{
+        heroRowH100.classList.add('h100');
+    }
+}
+adaptiveH100();
+//=============================================================================================================================
+
 
 
 

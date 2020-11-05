@@ -1,5 +1,8 @@
 .about {
     margin: 150px 0;
+    &__row{
+        justify-content: space-evenly;
+    }
 	    &__title {
             margin-bottom: 100px;
         }
@@ -9,6 +12,11 @@
             }
             &:first-child{
                 margin-right: 30px;
+            }
+            @media screen and (max-width:992px) {
+                &:last-child{
+                    display: none;
+                }
             }
 	    &__subtitle {
             margin-bottom: 40px;
