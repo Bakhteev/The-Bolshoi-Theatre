@@ -2,6 +2,13 @@
     background: url(../img/hero/herobg.webp) no-repeat center;
     background-size: cover;
     height: 100vh;
+    padding-top: 50px;
+    position: relative;
+    box-sizing: border-box;
+        &__row{
+            justify-content: center;
+            align-items: center;
+        }
 		&__title {
             @include font(64px, 87px, 0.1em);
 		}
@@ -12,8 +19,14 @@
             @include flexbox(end, center);
             flex-direction: column;
             margin-right: 150px;
+            @media screen and (max-width:992px) {
+                margin-top: 231px;
+            }
             &:last-child{
                 margin-right: -150px;
+                @media screen and (max-width: 992px) {
+                    display: none;
+                }
             }
         }
         &__btn{
