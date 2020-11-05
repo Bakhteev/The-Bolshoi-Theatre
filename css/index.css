@@ -312,6 +312,13 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .hero__row {
+    height: auto;
+  }
 }
 
 .hero__title {
@@ -321,10 +328,17 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   font-style: normal;
+  white-space: nowrap;
 }
 
 .hero__description {
   margin: 50px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .hero__description {
+    width: 539px;
+  }
 }
 
 .hero__item {
@@ -377,17 +391,27 @@ button {
 }
 
 .about__row {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about__title {
   margin-bottom: 100px;
 }
 
+.about__item {
+  width: 445px;
+}
+
 .about__item--255 {
   max-width: 255px;
+}
+
+@media screen and (max-width: 992px) {
+  .about__item--255 {
+    max-width: 208px;
+  }
 }
 
 .about__item:first-child {
@@ -446,6 +470,16 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+  .project__slider {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 690px;
+    overflow: hidden;
+  }
 }
 
 .project__item {
@@ -595,6 +629,14 @@ button {
   max-width: 540px;
 }
 
+@media screen and (max-width: 992px) {
+  .rating__text {
+    max-width: 450px;
+    max-height: 190px;
+    margin-left: 82px;
+  }
+}
+
 .rating__stars {
   margin-bottom: 25px;
   height: 33px;
@@ -637,6 +679,7 @@ button {
   text-transform: none;
   font-weight: bold;
   font-style: normal;
+  font-size: calc(25px + 11 * ((100vw - 320px) / 1600));
 }
 
 @-webkit-keyframes star-up {
@@ -665,11 +708,29 @@ button {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 992px) {
+  .partners .row {
+    width: 1034px;
+    max-height: 272px;
+  }
+}
+
 .partners__row {
   margin: 0 -40px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+  .partners__row {
+    width: 690px;
+    overflow: hidden;
+    margin-left: 0 auto 0 64px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .partners__logo {
@@ -678,6 +739,7 @@ button {
 }
 
 .footer {
+  margin-top: 100px;
   margin-bottom: 150px;
 }
 
@@ -698,14 +760,48 @@ button {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 992px) {
+  .footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer__contacts {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
+@media screen and (max-width: 992px) {
+  .footer__contacts {
+    width: 692px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .footer__contacts li {
-  margin-bottom: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__contacts li:last-child {
@@ -719,6 +815,13 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   font-style: normal;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .footer__link:first-child {
+    text-align: right;
+  }
 }
 
 .footer__labels {
@@ -872,4 +975,29 @@ button {
 
 .footer__btn {
   width: 190px;
+}
+
+.footer__bottom {
+  margin-top: 80px;
+  width: 100%;
+  position: relative;
+}
+
+.footer__bottom::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  height: 2px;
+  width: 100%;
+  background-color: #565656;
+}
+
+.footer__bottom__text {
+  color: #989898;
+}
+
+.footer__bottom__row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
