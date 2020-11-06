@@ -4,8 +4,10 @@
             margin-bottom: 100px;
 		}
 		&__slider {
+            margin-left: 150px;
             display: flex;
             justify-content: flex-end;
+            overflow: hidden;
             @media screen and (max-width:992px) {
                 justify-content: flex-start;
                 max-width: 690px;

@@ -51,6 +51,7 @@
     bottom: 0;
     left: 0;
     font-size: 0;
+    cursor: pointer;
     &::before{
         position: absolute;
         content: "";
@@ -74,6 +75,7 @@
     bottom: 15px;
     right: 0;
     font-size: 0;
+    cursor: pointer;
       &::before{
         position: absolute;
         content: "";
@@ -92,4 +94,8 @@
         @include font(18px, 25px, 0.1em);
         color: #C4C4C4;
     }
+}
+.slick-slide:focus{
+    outline: none !important;
+    border:none !important;
 }

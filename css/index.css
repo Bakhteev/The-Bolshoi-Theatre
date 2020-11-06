@@ -397,6 +397,7 @@ button {
   bottom: 0;
   left: 0;
   font-size: 0;
+  cursor: pointer;
 }
 
 .slick-prev.slick-arrow::before {
@@ -428,6 +429,7 @@ button {
   bottom: 15px;
   right: 0;
   font-size: 0;
+  cursor: pointer;
 }
 
 .slick-next.slick-arrow::before {
@@ -455,6 +457,11 @@ button {
   font-weight: bold;
   font-style: normal;
   color: #C4C4C4;
+}
+
+.slick-slide:focus {
+  outline: none !important;
+  border: none !important;
 }
 
 .about {
@@ -531,12 +538,14 @@ button {
 }
 
 .project__slider {
+  margin-left: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 992px) {
