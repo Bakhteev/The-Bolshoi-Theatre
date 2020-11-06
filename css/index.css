@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -305,6 +306,11 @@ button {
           box-sizing: border-box;
 }
 
+.hero .slider {
+  width: 370px;
+  height: 570px;
+}
+
 .hero__row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -386,6 +392,71 @@ button {
           justify-content: center;
 }
 
+.slick-prev.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0;
+}
+
+.slick-prev.slick-arrow::before {
+  position: absolute;
+  content: "";
+  top: -24px;
+  left: 11px;
+  background: url(../../img/hero/Arrow.svg) no-repeat center;
+  width: 40px;
+  height: 15px;
+}
+
+.slick-prev.slick-arrow::after {
+  position: absolute;
+  content: "пред";
+  top: -28px;
+  left: 77px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  color: #C4C4C4;
+}
+
+.slick-next.slick-arrow {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  font-size: 0;
+}
+
+.slick-next.slick-arrow::before {
+  position: absolute;
+  content: "";
+  top: -9px;
+  left: -40px;
+  background: url(../../img/hero/Arrow.svg) no-repeat center;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 40px;
+  height: 15px;
+}
+
+.slick-next.slick-arrow::after {
+  position: absolute;
+  content: "след";
+  top: -13px;
+  left: -120px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  color: #C4C4C4;
+}
+
 .about {
   margin: 150px 0;
 }
@@ -398,10 +469,6 @@ button {
 
 .about__title {
   margin-bottom: 100px;
-}
-
-.about__item {
-  width: 445px;
 }
 
 .about__item--255 {
@@ -1000,4 +1067,14 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
