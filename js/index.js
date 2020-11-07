@@ -33,6 +33,13 @@ Items.forEach((items, i) => items.addEventListener('mouseleave', () => {
     searchs[i].classList.remove('opacity');
 }))
 
+//==================================================================================================================================
+$('.header__burger-menu').on('click', function () {
+    $(this).toggleClass('active');
+    $('.burger__menu-line').toggleClass('active')
+    $('.header__nav-copy').toggleClass('active')
+    $('.sidebar__social').toggleClass('active')
+})
 
 
 

@@ -17,6 +17,13 @@
                 height: 100%;
                 width: 100%;
             }
+            @media screen and (max-width:768px) {
+                padding-left: 99px;
+            }
+            @media screen and (max-width:576px) {
+                padding-left: 33px;
+                padding-right: 0;
+            }
 
 		}
 		&__years {
@@ -35,6 +42,10 @@
                 max-width: 450px;
                 max-height: 190px;
                 margin-left: 82px;
+            }
+            @media screen and (max-width:768px) {
+                margin-left: 27px;
+
             }
         }
         &__stars{
@@ -64,8 +75,18 @@
 		&__rewiev {
             font-family: "Open Sans", sans-serif;
             @include font(36px, 150%, normal, none);
-            @include adaptiv-font(36, 25)
-		}
+            @media screen and (max-width:768px) {
+                font-size: 29px;
+                max-width: 388px;
+                max-height: 121px;
+            }
+            @media screen and (max-width:576px) {
+                font-size: 25px;
+            }
+            @media screen and (max-width:576px) {
+                max-width: 330px;
+            }
+        }
 }
 @keyframes star-up{
     0% { transform: translateY(0);}

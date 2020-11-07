@@ -5,6 +5,13 @@
     padding-top: 50px;
     position: relative;
     box-sizing: border-box;
+    @media screen and (max-width:768px) {
+        padding: 0;
+    }
+    .slider{
+        width: 370px;
+        height: 570px;
+    }
         &__row{
             justify-content: center;
             align-items: center;
@@ -36,9 +43,68 @@
                     display: none;
                 }
             }
+            @media screen and (max-width:768px) {
+                margin: 174px 114px 0 0;
+            }
+            @media screen and (max-width:576px) {
+                margin: 115px 114px 0 -147px;
+            }
         }
         &__btn{
             @include flexbox;
         }
         
+}
+.slick-prev.slick-arrow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+    cursor: pointer;
+    &::before{
+        position: absolute;
+        content: "";
+        top: -24px;
+        left: 11px;
+        background: url(../../img/hero/Arrow.svg) no-repeat center;
+        width: 40px;
+        height: 15px;
+    }
+    &::after{
+        position: absolute;
+        content: "пред";
+        top: -28px;
+        left: 77px;
+        @include font(18px, 25px, 0.1em);
+        color: #C4C4C4;
+    }
+}
+.slick-next.slick-arrow{
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    font-size: 0;
+    cursor: pointer;
+      &::before{
+        position: absolute;
+        content: "";
+        top: -9px;
+        left: -40px;
+        background: url(../../img/hero/Arrow.svg) no-repeat center;
+        transform: rotate(180deg);
+        width: 40px;
+        height: 15px;
+    }
+    &::after{
+        position: absolute;
+        content: "след";
+        top: -13px;
+        left: -120px;
+        @include font(18px, 25px, 0.1em);
+        color: #C4C4C4;
+    }
+}
+.slick-slide:focus{
+    outline: none !important;
+    border:none !important;
 }
