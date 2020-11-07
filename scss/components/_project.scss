@@ -19,6 +19,12 @@
                 max-height: 555px;
                 margin-left: 191px;
             }
+            @media screen and (max-width:768px) {
+                margin-left: 40px
+            }
+            @media screen and (max-width:576px) {
+                max-width: 520px;
+            }
 		}
 		&__item {
             position: relative;
