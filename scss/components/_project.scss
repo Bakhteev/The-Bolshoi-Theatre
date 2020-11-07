@@ -1,10 +1,14 @@
 .project {
     margin-bottom: 140px;
+    .row{
+        @media screen and (max-width:992px) {
+            flex-wrap: nowrap;
+        }
+    }
 		&__title {
             margin-bottom: 100px;
 		}
 		&__slider {
-            margin-left: 150px;
             display: flex;
             justify-content: flex-end;
             overflow: hidden;
@@ -12,6 +16,8 @@
                 justify-content: flex-start;
                 max-width: 690px;
                 overflow: hidden;
+                max-height: 555px;
+                margin-left: 191px;
             }
 		}
 		&__item {
@@ -56,18 +62,6 @@
             }
         }
 	
-}
-.black{
-    position: absolute;
-    background-color: $black;
-    opacity: 0.65;
-    z-index: 10;
-    height: 100%;
-    width: 100%;
-    transition: 0.3s;
-    &:hover{
-        opacity: 0;
-    }
 }
 .project__item:hover::before{
     opacity: 0;

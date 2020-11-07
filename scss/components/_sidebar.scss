@@ -7,6 +7,9 @@
 	background-color: rgba($color: #333333, $alpha: 0.7);
 	@include flexbox(center, space-between);
 	flex-direction: column;
+	@media screen and (max-width:768px) {
+		display: none;
+	}
 		&__social {
 			margin-top: 160px;
 			margin-bottom: 86px;
