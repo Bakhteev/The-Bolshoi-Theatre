@@ -1,12 +1,14 @@
 .about {
     margin: 150px 0;
-    &__row{
-        justify-content: center;
-    }
 	    &__title {
             margin-bottom: 100px;
             @media screen and (max-width:768px) {
                 margin-bottom: 60px;
+            }
+        }
+        &__row{
+            @media screen and (max-width:1024px) {
+                justify-content: center;
             }
         }
         &__item{
@@ -31,7 +33,7 @@
             }
             &--255{
                 max-width: 255px;
-                @media screen and (max-width:992px) {
+                @media screen and (max-width:1024px) {
                     max-width: 208px;     
                 }
                 @media screen and (max-width:576px) {
@@ -44,12 +46,13 @@
                     margin-bottom: 35px;
                 }
             }
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:1024px) {
                 &:last-child{
                     display: none;
                 }
             }
 	    &__subtitle {
+            white-space: nowrap;
             margin-bottom: 40px;
             @include font(21px, 29px, 0.1em, uppercase);
 		}
@@ -64,10 +67,9 @@
             }
         }
         &__info{
+            white-space: nowrap;
             margin: 0;
             @include font(16px, 22px, 0.05em, lowercase);
-            @media screen and (max-width:576px) {
-            }
         }
     }
     .col-5{

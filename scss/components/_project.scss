@@ -1,10 +1,5 @@
 .project {
     margin-bottom: 140px;
-    .row{
-        @media screen and (max-width:992px) {
-            flex-wrap: nowrap;
-        }
-    }
 		&__title {
             margin-bottom: 100px;
 		}
@@ -12,7 +7,15 @@
             display: flex;
             justify-content: flex-end;
             overflow: hidden;
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:1440px) {
+                max-width: 1290px;
+                margin-left: 150px;
+                justify-content: start;
+            }
+            @media screen and (max-width:1330px) {
+                max-width: 1060px;
+            }
+            @media screen and (max-width:1024px) {
                 justify-content: flex-start;
                 max-width: 690px;
                 overflow: hidden;

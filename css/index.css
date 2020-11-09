@@ -129,7 +129,7 @@ button {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .header__nav {
     margin-left: 191px;
   }
@@ -151,6 +151,12 @@ button {
   max-width: 824px;
 }
 
+@media screen and (width: 1330px) {
+  .header__menu {
+    padding-left: 69px;
+  }
+}
+
 .header__menu li {
   margin-right: 61px;
 }
@@ -159,7 +165,7 @@ button {
   margin-right: 0;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .header__menu li {
     margin-right: 30px;
   }
@@ -200,7 +206,6 @@ button {
   text-align: right;
   position: relative;
   margin-left: 167px;
-  margin-right: 0;
 }
 
 .header__link--smaller::before {
@@ -213,7 +218,13 @@ button {
   background-color: #D1A954;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1330px) {
+  .header__link--smaller {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .header__link--smaller {
     margin: 50px 0 0 246px;
   }
@@ -237,6 +248,8 @@ button {
   padding: 20px 0 0 10px;
   cursor: pointer;
   display: none;
+  background: #333333;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -504,6 +517,18 @@ button {
   text-align: right;
 }
 
+@media screen and (max-width: 1440px) {
+  .sidebar__information {
+    margin-top: 320px;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .sidebar__information {
+    margin-top: 220px;
+  }
+}
+
 .sidebar__information::before {
   position: absolute;
   top: 50%;
@@ -548,7 +573,13 @@ button {
   height: 100%;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1330px) {
+  .hero__row {
+    padding-left: 69px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .hero__row {
     height: auto;
   }
@@ -568,7 +599,7 @@ button {
   margin: 50px 0;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .hero__description {
     width: 539px;
   }
@@ -591,9 +622,9 @@ button {
   margin-right: 150px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .hero__item {
-    margin-top: 231px;
+    margin-top: 14px;
   }
 }
 
@@ -601,7 +632,7 @@ button {
   margin-right: -150px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .hero__item:last-child {
     display: none;
   }
@@ -609,7 +640,7 @@ button {
 
 @media screen and (max-width: 768px) {
   .hero__item {
-    margin: 174px 114px 0 0;
+    margin: 240px 240px 0 0;
   }
 }
 
@@ -707,12 +738,6 @@ button {
   margin: 150px 0;
 }
 
-.about__row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .about__title {
   margin-bottom: 100px;
 }
@@ -720,6 +745,14 @@ button {
 @media screen and (max-width: 768px) {
   .about__title {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -770,7 +803,7 @@ button {
   max-width: 255px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .about__item--255 {
     max-width: 208px;
   }
@@ -792,13 +825,14 @@ button {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .about__item:last-child {
     display: none;
   }
 }
 
 .about__item__subtitle {
+  white-space: nowrap;
   margin-bottom: 40px;
   font-size: 21px;
   line-height: 29px;
@@ -823,6 +857,7 @@ button {
 }
 
 .about__item__info {
+  white-space: nowrap;
   margin: 0;
   font-size: 16px;
   line-height: 22px;
@@ -860,13 +895,6 @@ button {
   margin-bottom: 140px;
 }
 
-@media screen and (max-width: 992px) {
-  .project .row {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
-
 .project__title {
   margin-bottom: 100px;
 }
@@ -881,7 +909,23 @@ button {
   overflow: hidden;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1440px) {
+  .project__slider {
+    max-width: 1290px;
+    margin-left: 150px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .project__slider {
+    max-width: 1060px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .project__slider {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1049,7 +1093,7 @@ button {
   max-width: 540px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .rating__text {
     max-width: 450px;
     max-height: 190px;
@@ -1160,7 +1204,7 @@ button {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .partners__row {
     width: 840px;
     max-height: 272px;
@@ -1206,7 +1250,7 @@ button {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .footer__form {
     max-width: 690px;
   }
@@ -1224,7 +1268,7 @@ button {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .footer__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1242,7 +1286,7 @@ button {
   list-style: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .footer__contacts {
     width: 692px;
     display: -webkit-box;
@@ -1295,7 +1339,7 @@ button {
   margin-bottom: 25px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .footer__link:first-child {
     text-align: right;
   }
@@ -1443,7 +1487,7 @@ button {
   color: #989898;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .footer__textarea {
     min-width: 270px;
   }
@@ -1523,7 +1567,7 @@ button {
   background-color: #565656;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .footer__bottom::before {
     width: 690px;
     left: 50%;
@@ -1549,7 +1593,7 @@ button {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .footer__bottom__row {
     padding: 0 150px;
   }
