@@ -7,7 +7,7 @@
         &__form{
             max-width: 730px;
             justify-content: space-between;
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:1024px) {
                 max-width: 690px;
             }
             @media screen and (max-width:590px) {
@@ -16,7 +16,7 @@
         }
 		&__row {
             justify-content: space-between;
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:1024px) {
                 flex-direction: column-reverse;
                 align-items: center;
             }
@@ -26,7 +26,7 @@
             padding: 0;
             margin: 0;
             list-style: none;
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:1024px) {
                 width: 692px;
                 display: flex;
                 flex-wrap: wrap;
@@ -51,7 +51,7 @@
 		&__link {
             @include font(16px, 22px, 0.05em);
             margin-bottom: 25px;
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:1024px) {
                 &:first-child{
                 text-align: right;
             }
@@ -106,7 +106,7 @@
                 @include font(12px, 150%, normal, none, 600);
                 color: #989898;
             }
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:1024px) {
                 min-width: 270px;  
             }
             @media screen and (max-width:576px) {
@@ -150,7 +150,7 @@
                 height: 2px;
                 width: 100%;
                 background-color: #565656;
-                @media screen and (max-width:992px) {
+                @media screen and (max-width:1024px) {
                     width: 690px;
                     left: 50%;
                     transform: translateX(-50%);
@@ -164,7 +164,7 @@
             }
             &__row{
                 justify-content: space-between;
-                @media screen and (max-width:992px) {
+                @media screen and (max-width:1024px) {
                     padding: 0 150px; 
                 }
                 @media screen and (max-width:768px) {

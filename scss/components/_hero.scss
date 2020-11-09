@@ -16,7 +16,10 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:1330px) {
+                padding-left: 69px;
+            }
+            @media screen and (max-width:1024px) {
                 height: auto;
             }
         }
@@ -26,7 +29,7 @@
 		}
 		&__description {
             margin: 50px 0;
-            @media screen and (max-width:992px) {
+            @media screen and (max-width:1024px) {
                 width: 539px;
             }
         }
@@ -34,17 +37,17 @@
             @include flexbox(end, center);
             flex-direction: column;
             margin-right: 150px;
-            @media screen and (max-width:992px) {
-                margin-top: 231px;
+            @media screen and (max-width:1024px) {
+                margin-top: 14px;
             }
             &:last-child{
                 margin-right: -150px;
-                @media screen and (max-width: 992px) {
+                @media screen and (max-width: 1024px) {
                     display: none;
                 }
             }
             @media screen and (max-width:768px) {
-                margin: 174px 114px 0 0;
+                margin: 240px 240px 0 0;
             }
             @media screen and (max-width:576px) {
                 margin: 115px 114px 0 -147px;

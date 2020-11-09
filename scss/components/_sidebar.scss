@@ -33,6 +33,12 @@
 			white-space: nowrap;
 			color: #c4c4c4;
 			text-align: right;
+			@media screen and (max-width:1440px) {
+				margin-top: 320px;
+			}
+			@media screen and (max-width:1330px) {
+				margin-top: 220px;
+			}
 			&::before{
 				position: absolute;
 				top: 50%;
