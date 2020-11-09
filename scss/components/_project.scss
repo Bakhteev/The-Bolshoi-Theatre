@@ -12,8 +12,11 @@
                 margin-left: 150px;
                 justify-content: start;
             }
-            @media screen and (max-width:1330px) {
+            @media screen and (max-width:1336px) {
                 max-width: 1060px;
+            }
+            @media screen and (max-width:1280px) {
+                min-width: 1020px;
             }
             @media screen and (max-width:1024px) {
                 justify-content: flex-start;
@@ -27,6 +30,9 @@
             }
             @media screen and (max-width:576px) {
                 max-width: 520px;
+            }
+            @media screen and (max-width:320px) {
+                margin-left: 0;
             }
 		}
 		&__item {

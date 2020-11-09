@@ -36,8 +36,11 @@
 			@media screen and (max-width:1440px) {
 				margin-top: 320px;
 			}
-			@media screen and (max-width:1330px) {
+			@media screen and (max-width:1336px) {
 				margin-top: 220px;
+			}
+			@media screen and (max-width:1280px) {
+				margin-top: 160px;
 			}
 			&::before{
 				position: absolute;

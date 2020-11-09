@@ -1,4 +1,9 @@
 .partners {
+	.row{
+		@media screen and (max-width:414px) {
+			flex-wrap: nowrap;
+		}
+	}
 		&__title {
             margin-bottom: 100px;
 		}
@@ -8,7 +13,7 @@
 			@media screen and (max-width:1024px) {
 				width: 840px;
 				max-height: 272px;
-				overflow: hidden;
+				overflow-y: hidden;
 				margin: 0 auto 0 64px;
 				justify-content: center;
 			}

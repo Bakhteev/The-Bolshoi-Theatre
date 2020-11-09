@@ -16,21 +16,47 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-            @media screen and (max-width:1330px) {
+            @media screen and (max-width:1336px) {
                 padding-left: 69px;
             }
             @media screen and (max-width:1024px) {
                 height: auto;
             }
+            @media screen and (max-width:375px) {
+                padding-left: 64px;
+            }
+            @media screen and (max-width:320px) {
+                padding-left: 75px;
+            }
         }
 		&__title {
             @include font(64px, 87px, 0.1em);
             white-space: nowrap;
+            @media screen and (max-width:414px) {
+                font-size: 47px;
+            }
+            @media screen and (max-width:375px) {
+                font-size: 44px;
+            }
+            @media screen and(max-width:320px) {
+                font-size: 39px;
+            }
 		}
 		&__description {
             margin: 50px 0;
             @media screen and (max-width:1024px) {
                 width: 539px;
+            }
+            @media screen and (max-width:414px) {
+                width: 390px;
+                margin: 40px 0;
+            }
+            @media screen and (max-width:375px) {
+                width: 360px;
+            }
+            @media screen and (max-width:320px) {
+                width: 300px;
+                margin-top: 20px ;
             }
         }
         &__item{
@@ -38,7 +64,7 @@
             flex-direction: column;
             margin-right: 150px;
             @media screen and (max-width:1024px) {
-                margin-top: 14px;
+                margin-top: 140px;
             }
             &:last-child{
                 margin-right: -150px;
@@ -69,7 +95,7 @@
         content: "";
         top: -24px;
         left: 11px;
-        background: url(../../img/hero/Arrow.svg) no-repeat center;
+        background: url(../img/hero/Arrow.svg) no-repeat center;
         width: 40px;
         height: 15px;
     }
@@ -93,7 +119,7 @@
         content: "";
         top: -9px;
         left: -40px;
-        background: url(../../img/hero/Arrow.svg) no-repeat center;
+        background: url(../img/hero/Arrow.svg) no-repeat center;
         transform: rotate(180deg);
         width: 40px;
         height: 15px;
