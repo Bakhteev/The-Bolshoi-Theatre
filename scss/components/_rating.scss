@@ -3,7 +3,7 @@
 		&__row {
             position: relative;
             z-index: 1;
-            background: url(../img/rating/Rectangle28.png) no-repeat center;
+            background: url(../img/rating/Rectangle28.webp) no-repeat center;
             background-size: cover;
             height: 100%;
             padding: 126px 90px 126px 185px;
@@ -24,15 +24,28 @@
                 padding-left: 33px;
                 padding-right: 0;
             }
+            @media screen and (max-width:414px) {
+                padding-left: 50px;
+            }
+            @media screen and (max-width:320px) {
+                padding-left: 0;
+                padding-top: 100px;  
+            }
 
 		}
 		&__years {
             @include flexbox;
             flex-direction: column;
+            @media screen and (max-width:414px) {
+                margin-left: 77px;
+            }
 		}
 
 		&__year {
             @include font(72px, 98px, 0.1em);
+            @media screen and (max-width:320px) {
+                line-height: 72px;
+            }
 		}
 
 		&__text {
