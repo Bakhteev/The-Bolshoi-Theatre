@@ -157,15 +157,21 @@ button {
   max-width: 824px;
 }
 
-@media screen and (width: 1336px) {
+@media screen and (max-width: 1350px) {
   .header__menu {
     padding-left: 69px;
   }
 }
 
-@media screen and (width: 1280px) {
+@media screen and (max-width: 1280px) {
   .header__menu {
     padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__menu {
+    padding-left: 0;
   }
 }
 
@@ -230,13 +236,13 @@ button {
   background-color: #D1A954;
 }
 
-@media screen and (width: 1336px) {
+@media screen and (max-width: 1350px) {
   .header__link--smaller {
     margin-left: 100px;
   }
 }
 
-@media screen and (width: 1280px) {
+@media screen and (max-width: 1280px) {
   .header__link--smaller {
     margin-left: 69px;
   }
@@ -571,7 +577,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1336px) {
+@media screen and (max-width: 1350px) {
   .sidebar__information {
     margin-top: 220px;
   }
@@ -627,7 +633,7 @@ button {
   height: 100%;
 }
 
-@media screen and (max-width: 1336px) {
+@media screen and (max-width: 1350px) {
   .hero__row {
     padding-left: 69px;
   }
@@ -1041,7 +1047,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1336px) {
+@media screen and (max-width: 1350px) {
   .project__slider {
     max-width: 1060px;
   }

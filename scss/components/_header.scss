@@ -12,11 +12,14 @@
                   padding: 0;
                   margin: 0;
                   max-width: 824px;
-                  @media screen and (width:1336px) {
+                  @media screen and (max-width:1350px) {
                         padding-left: 69px;
                   }
-                  @media screen and (width:1280px) {
+                  @media screen and (max-width:1280px) {
                         padding-left: 100px;
+                  }
+                  @media screen  and (max-width:1024px) {
+                        padding-left: 0;
                   }
                   li{   
                         margin-right: 61px;
@@ -54,10 +57,10 @@
                         height: 2px;
                         background-color: $gold;
                   }
-                  @media screen and (width:1336px){
+                  @media screen and (max-width:1350px){
                         margin-left: 100px;
                   }
-                  @media screen and (width:1280px) {
+                  @media screen and (max-width:1280px) {
                         margin-left: 69px;
                   }
                   @media screen and (max-width:1024px) {
